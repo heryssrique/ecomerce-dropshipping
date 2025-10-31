@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Dropshipping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="login.html" class="login-link">Login</a>
+            <!-- Menu principal -->
+            <div class="user-menu">
+                <span class="login-link"></span>
+                <div class="user-dropdown">
+                    <a href="orders.html">Meus Pedidos</a>
+                    <a href="#" id="logout">Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos">
+            <h2>Destaques</h2>
+            <div class="produto" data-id="${product.id}">
+                <!-- Estrutura do produto será preenchida via JS -->
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Receba todas as promoções</h2>
+            <form>
+                <input type="email" placeholder="Seu e-mail">
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <button class="cart-toggle">🛒 <span class="cart-count">0</span></button>
+    <div class="cart-sidebar">
+        <h3>Carrinho (<span class="cart-count">0</span>)</h3>
+        <div class="cart-items">
+            <!-- Itens serão adicionados dinamicamente -->
+        </div>
+        <div class="cart-total">
+            Total: R$<span class="total-amount">0,00</span>
+        </div>
+        <button class="checkout-btn">Finalizar Compra</button>
+    </div>
+    <footer>
+        <a href="https://instagram.com/" class="instagram">Siga-nos no Instagram</a>
+        <!-- Rodapé -->
+    </footer>
+</body>
+</html>
